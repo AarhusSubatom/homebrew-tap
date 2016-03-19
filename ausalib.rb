@@ -1,6 +1,6 @@
 class Ausalib < Formula
 
-  version_number = "1"
+  version_number = "16.3.1"
   desc "AarhusSubatom analysis library"
   homepage "https://git.kern.phys.au.dk/ausa/ausalib"
   url "https://git.kern.phys.au.dk/ausa/ausalib/repository/archive.tar.gz?ref=#{version_number}"
