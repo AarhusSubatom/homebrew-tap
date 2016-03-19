@@ -18,8 +18,7 @@ Mirror to github.com:
     -    git remote add github github-homebrew-tap:AarhusSubatom/homebrew-tap.git
     -    echo "Remote defined"
     - fi
-    - git checkout "$CI_BUILD_REF_NAME"
-    - git push github "$CI_BUILD_REF_NAME"
+    - git push github --all
   type: mirror
   tags:
     - mac
