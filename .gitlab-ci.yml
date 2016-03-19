@@ -18,6 +18,7 @@ Rewrite formular:
     -   ./update_formula.sh "$FORMULA.rb" $FORMULA_V
     - fi
     - cat "$FORMULA.rb"
+  type: rewrite
 
 Mirror to github.com:
   script:
