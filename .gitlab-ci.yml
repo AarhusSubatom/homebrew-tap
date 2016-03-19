@@ -1,0 +1,22 @@
+types:
+  - test
+#  - mirror
+
+Audit:
+  script:
+    - brew audit --strict --online ./*.rb
+  type: test
+  tags:
+    - mac
+
+
+#Mirror to github.com:
+#  script:
+#    - cmake ./
+#    - make doc
+#    - cp -R "docs/html/" "/usr/share/nginx/html/simx/"
+#  type: deploy
+#  tags:
+#    - doxygen
+#  only:
+#    - master
