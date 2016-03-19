@@ -2,12 +2,12 @@ types:
 #  - test
   - mirror
 
-Audit:
-  script:
-    - brew audit --strict --online ./*.rb
-  type: test
-  tags:
-    - mac
+#Audit:
+#  script:
+#    - brew audit --strict --online ./*.rb
+#  type: test
+#  tags:
+#    - mac
 
 
 Mirror to github.com:
