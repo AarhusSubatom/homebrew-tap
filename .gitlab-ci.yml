@@ -12,7 +12,7 @@ types:
 
 Mirror to github.com:
   script:
-    - if git config remote.github.url > /dev/null; then
+    - if [ !git config remote.github.url > /dev/null ]; then
     -    git remote add github github-homebrew-tap:AarhusSubatom/homebrew-tap.git
     - fi
     - git push github master
