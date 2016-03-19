@@ -14,7 +14,7 @@ Rewrite formular:
   script:
     - echo $FORMULA
     - echo $FORMULA_V
-    - if $FORMULA ; then
+    - if [[ -v FORMULA ]] ; then
     -   ./update_formula.sh "$FORMULA.rb" $FORMULA_V
     - fi
     - cat "$FORMULA.rb"
