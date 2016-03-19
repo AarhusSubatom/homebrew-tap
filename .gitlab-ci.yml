@@ -17,6 +17,9 @@ Rewrite formular:
     - if [[ -v FORMULA ]] ; then
     -   ./update_formula.sh "$FORMULA.rb" $FORMULA_V
     -   cat "$FORMULA.rb"
+    -   git add "$FORMULA.rb"
+    -   git commit -m "Updated to $FORMULA.rb to version $FORMULA_V"
+    -   git push git@git.kern.phys.au.dk:ausa/homebrew-tap.git master
     - fi
   type: rewrite
   tags:
