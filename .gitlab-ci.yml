@@ -19,6 +19,9 @@ Rewrite formular:
     - fi
     - cat "$FORMULA.rb"
   type: rewrite
+  tags:
+    - linux
+    - variables
 
 Mirror to github.com:
   script:
