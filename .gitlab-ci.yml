@@ -19,7 +19,7 @@ Rewrite formular:
     -   cat "$FORMULA.rb"
     -   git add "$FORMULA.rb"
     -   git commit -m "Updated to $FORMULA.rb to version $FORMULA_V"
-    -   git push homebrew-tap:ausa/homebrew-tap.git master
+    -   git push git@git.kern.phys.au.dk:ausa/homebrew-tap.git master
     - else
     -   echo "Not triggered build - nothing to be done"
     - fi
