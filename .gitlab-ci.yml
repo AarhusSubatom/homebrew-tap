@@ -1,6 +1,6 @@
 types:
-  - test
-#  - mirror
+#  - test
+  - mirror
 
 Audit:
   script:
@@ -10,13 +10,14 @@ Audit:
     - mac
 
 
-#Mirror to github.com:
-#  script:
-#    - cmake ./
-#    - make doc
-#    - cp -R "docs/html/" "/usr/share/nginx/html/simx/"
-#  type: deploy
-#  tags:
-#    - doxygen
-#  only:
-#    - master
+Mirror to github.com:
+  script:
+    - if git config remote.github.url > /dev/null; then
+    -    git remote add github github-homebrew-tap:AarhusSubatom/homebrew-tap.git
+    - fi
+    - git push github master
+  type: mirror
+  tags:
+    - mac
+  only:
+    - master
