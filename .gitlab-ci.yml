@@ -1,5 +1,6 @@
 types:
 #  - test
+  - rewrite
   - mirror
 
 #Audit:
@@ -9,6 +10,14 @@ types:
 #  tags:
 #    - mac
 
+Rewrite formular:
+  script:
+    - echo $FORMULA
+    - echo $FORMULA_V
+    - if $FORMULA ; then
+    -   ./update_formula.sh "$FORMULA.rb" $FORMULA_V
+    - fi
+    - cat "$FORMULA.rb"
 
 Mirror to github.com:
   script:
