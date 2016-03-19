@@ -12,7 +12,7 @@ class Ausalib < Formula
 
   depends_on 'root'  if !build.with?('root-6')
   depends_on 'root6' if  build.with?('root-6')
-
+  depends_on "gsl" => :recommended
   depends_on "cmake" => :build
   needs :cxx11 
 
