@@ -12,8 +12,11 @@ types:
 
 Mirror to github.com:
   script:
-    - if [ !git config remote.github.url > /dev/null ]; then
+    - if git config remote.github.url > /dev/null; then
+    -    echo "Remote already defined"
+    - else
     -    git remote add github github-homebrew-tap:AarhusSubatom/homebrew-tap.git
+    -    echo "Remote defined"
     - fi
     - git push github master
   type: mirror
