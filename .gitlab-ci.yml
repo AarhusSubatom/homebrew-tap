@@ -13,6 +13,8 @@ types:
 Rewrite formular:
   script:
     - whoami
+    - echo $HOME
+    - ls $HOME/.ssh
     - echo $FORMULA
     - echo $FORMULA_V
     - if [[ -v FORMULA ]] ; then
