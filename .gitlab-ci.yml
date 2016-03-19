@@ -16,8 +16,8 @@ Rewrite formular:
     - echo $FORMULA_V
     - if [[ -v FORMULA ]] ; then
     -   ./update_formula.sh "$FORMULA.rb" $FORMULA_V
+    -   cat "$FORMULA.rb"
     - fi
-    - cat "$FORMULA.rb"
   type: rewrite
   tags:
     - linux
