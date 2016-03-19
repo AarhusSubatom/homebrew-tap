@@ -12,6 +12,7 @@ types:
 
 Rewrite formular:
   script:
+    - whoami
     - echo $FORMULA
     - echo $FORMULA_V
     - if [[ -v FORMULA ]] ; then
