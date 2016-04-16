@@ -5,7 +5,7 @@ class Ausalib < Formula
   homepage "https://git.kern.phys.au.dk/ausa/ausalib"
   url "https://git.kern.phys.au.dk/ausa/ausalib/repository/archive.tar.gz?ref=#{version_number}"
   version version_number
-  sha256 "3a3d1d32a46b5f354636c2f1f5464ed021512f17f444cd82ee7e5d12e90fe869"
+  sha256 "06760b14eaf01c59c890d9a32ffe298749c20ebc8c2b518675cc1f761f29b620"
   head "https://git.kern.phys.au.dk/ausa/ausalib.git"
 
   option 'with-root-6', 'Install with ROOT 6'
