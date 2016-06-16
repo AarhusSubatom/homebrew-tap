@@ -1,11 +1,11 @@
 class Ausalib < Formula
 
-  version_number = "16.5"
+  version_number = "16.6"
   desc "AarhusSubatom analysis library"
   homepage "https://git.kern.phys.au.dk/ausa/ausalib"
   url "https://git.kern.phys.au.dk/ausa/ausalib/repository/archive.tar.gz?ref=#{version_number}"
   version version_number
-  sha256 "3dcbe37ed708f5a1cfa14baac8f22e551203bcf1c6a8db189a73f53073615c41"
+  sha256 "7e47b9fdfd377a587bfbc3aea36da5e431a59a76860935c6abf885a4bf38c0ea"
   head "https://git.kern.phys.au.dk/ausa/ausalib.git"
 
   option 'with-root-6', 'Install with ROOT 6'
