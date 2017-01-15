@@ -41,5 +41,6 @@ Mirror to github.com:
   type: mirror
   tags:
     - mac
+    - tojoma
   only:
     - master
