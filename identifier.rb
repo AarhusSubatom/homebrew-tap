@@ -2,7 +2,7 @@ class Identifier < Formula
 
   version_number = "16.3"
   desc "Identifier for sorted data"
-  homepage "https://git.kern.phys.au.dk/ausa/Sorter"
+  homepage "https://git.kern.phys.au.dk/ausa/Identifier"
   url "https://git.kern.phys.au.dk/ausa/Identifier/repository/archive.tar.gz?ref=#{version_number}"
   version version_number
   sha256 "942c5b67409fc650dc099dae41c76633f3a5d11f6086b50aac486a3dba484309"
